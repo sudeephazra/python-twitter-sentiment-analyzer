@@ -2,12 +2,6 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
-import requests
-from lxml import etree
-from io import StringIO, BytesIO
-import xml.etree.ElementTree as ET
-from requests.auth import HTTPBasicAuth
-import logging
 import CONFIG
 
 
