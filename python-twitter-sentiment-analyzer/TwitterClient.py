@@ -8,7 +8,7 @@ from io import StringIO, BytesIO
 import xml.etree.ElementTree as ET
 from requests.auth import HTTPBasicAuth
 import logging
-import CONFIG as config
+import CONFIG
 
 
 class TwitterClient(object):
@@ -19,7 +19,7 @@ class TwitterClient(object):
         '''
         Class constructor or initialization method.
         '''
-        CONFIG = CONFIG.CONFIG()
+
         # keys and tokens from the Twitter Dev Console
         consumer_key = CONFIG.CONSUMER_KEY
         consumer_secret = CONFIG.CONSUMER_SECRET
