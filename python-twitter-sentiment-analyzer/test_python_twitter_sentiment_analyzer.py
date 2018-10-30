@@ -1,5 +1,5 @@
 import TwitterClient
-import CONFIG
+
 
 def test_main():
 
