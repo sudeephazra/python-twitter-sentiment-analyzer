@@ -10,10 +10,6 @@ class TwitterClient(object):
     Generic Twitter Class for sentiment analysis.
     '''
     def __init__(self):
-        '''
-        Class constructor or initialization method.
-        '''
-
         # keys and tokens from the Twitter Dev Console
         consumer_key = CONFIG.CONSUMER_KEY
         consumer_secret = CONFIG.CONSUMER_SECRET

@@ -1,5 +1,5 @@
 import TwitterClient
-
+import CONFIG
 
 def test_main():
 
@@ -37,6 +37,4 @@ def test_main():
 
     print("Call is made with %d positive, %d neutral and %d negative tweets out of %d tweets" % (postiveCount, neutralCount, negativeCount, totalCount))
 
-if __name__ == "__main__":
-# calling main function
-    test_main()
+test_main()
