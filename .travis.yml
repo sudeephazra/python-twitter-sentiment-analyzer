@@ -15,4 +15,4 @@ script:
 after_success: coveralls
 before_install:
 - openssl aes-256-cbc -K $encrypted_9f16e24bb054_key -iv $encrypted_9f16e24bb054_iv
-  -in CONFIG.py.enc -out python-twitter-sentiment-analyzer\\CONFIG.py -d
+  -in python-twitter-sentiment-analyzer\\CONFIG.py.enc -out python-twitter-sentiment-analyzer\\CONFIG.py -d
