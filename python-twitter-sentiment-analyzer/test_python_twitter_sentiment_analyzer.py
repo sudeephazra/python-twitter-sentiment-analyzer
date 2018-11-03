@@ -24,9 +24,11 @@ def test_main():
 
     for tweet in positive[:10]:
         positive_mentions += tweet['text'] +  "\n"
+        print(tweet['text'])
 
     for tweet in negative[:10]:
         negative_mentions += tweet['text'] +  "\n"
+        print(tweet['text'])
 
     negativeComments = negative_mentions
     negativeCount = len(negative)
