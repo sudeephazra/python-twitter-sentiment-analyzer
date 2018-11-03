@@ -13,6 +13,8 @@ install:
 script:
 - pytest --cov=python-twitter-sentiment-analyzer/
 after_success: coveralls
+env:
+  global:
+    secure: J242zRciY3BI1hdOjmorLQNXvFaWu2lbRZ7NA8NITWMSqLPwhYb2SbZVf5JAknRynAHYqoeznHBBd80Daa17NKAaF+QjVfiHGBPGVi1hhJJspafi5btEiWGp8aIV1YevjGSkWHfNcpusahAJH0foxOuh6z580WXqI4QqrDdmOGzeSsopYzrHN1dFb/EXkNeawOazCjkzWQkbGZ35N5cey6EZxZlkN/w+4dpgox58XQ20bsnd2aytpJmZSb+wrSdGnPjQFZuba0iqGJj41uRAPcIghx88RLfrG4FSAbrBsQ74Tv+QHchlUOQkm35DMhBRdHwg13uD7EMut1hbl2sB1CKXKUFRyBX4+YnCIxDX1ZfXzvdhLbwyaR7u72B7wp/Y8RayFwfm08P/Bds4KkCI03U4kZTeoKTNRrpwLRUEVgAFBOX2j1pC4f+cNE4EPaymqCVNQQF+wGHqlpBMAP5W/8nrcgSbgvEKY4iRAOPhfrJ1hCIEfYLnJ6T8tQNosyTpxx1E3RGxSFOnFQPUCZIAx6aEbXfm/oe5D7Ew8nJOSafj/kMOK3Gs8rReGNEP0hZnxEBNqyjn95CWgQV/KNDcYsw/89enoXDkYxbKpW8r+nJ7spDJZQVQDT+cbX86LwAnnlcC/68QIDVSt7m51FW4tgz1v2CNw0iJgHA3aEVnobM=
 before_install:
-- openssl aes-256-cbc -K $encrypted_9f16e24bb054_key -iv $encrypted_9f16e24bb054_iv
-  -in CONFIG.py.enc -out python-twitter-sentiment-analyzer\\CONFIG.py -d
+  - echo $super_secret_password | gpg --passphrase-fd 0 python-twitter-sentiment-analyzer/CONFIG.py.gpg
