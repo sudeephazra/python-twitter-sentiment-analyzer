@@ -1,2 +1,7 @@
 
+.gitignore
+.scannerwork/
+.idea/
 python-twitter-sentiment-analyzer/CONFIG.py
+python-twitter-sentiment-analyzer/.pytest_cache
+python-twitter-sentiment-analyzer/__pycache__
