@@ -30,13 +30,16 @@ def test_main():
         negative_mentions += tweet['text'] +  "\n"
         print(tweet['text'])
 
-    negativeComments = negative_mentions
-    negativeCount = len(negative)
-    postiveComment= positive_mentions
-    postiveCount =len(positive)
-    totalCount =len(tweets)
-    neutralCount =len(tweets) - len(negative) - len(positive)
+    _negativeCount = len(negative)
+    _positiveCount = len(positive)
+    _totalCount = len(tweets)
+    _neutralCount = len(tweets) - len(negative) - len(positive)
 
-    print("Call is made with %d positive, %d neutral and %d negative tweets out of %d tweets" % (postiveCount, neutralCount, negativeCount, totalCount))
+    print("Call is made with %d positive, %d neutral and %d negative tweets out of %d tweets" % (_positiveCount,
+                                                                                                 _neutralCount,
+                                                                                                 _negativeCount,
+                                                                                                 _totalCount))
 
-test_main()
+
+if __name__ == '__main__':
+    test_main()
