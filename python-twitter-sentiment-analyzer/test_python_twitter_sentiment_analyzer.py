@@ -19,15 +19,15 @@ def test_main():
     # picking negative tweets from tweets
     negative = [t for t in tweets if t['sentiment'] == 'negative']
 
-    positive_mentions = ""
-    negative_mentions = ""
+    # positive_mentions = ""
+    # negative_mentions = ""
 
     for tweet in positive[:10]:
-        positive_mentions += tweet['text'] +  "\n"
+        # positive_mentions += tweet['text'] +  "\n"
         print(tweet['text'])
 
     for tweet in negative[:10]:
-        negative_mentions += tweet['text'] +  "\n"
+        # negative_mentions += tweet['text'] +  "\n"
         print(tweet['text'])
 
     _negativeCount = len(negative)
@@ -41,5 +41,4 @@ def test_main():
                                                                                                  _totalCount))
 
 
-if __name__ == '__main__':
-    test_main()
+test_main()
