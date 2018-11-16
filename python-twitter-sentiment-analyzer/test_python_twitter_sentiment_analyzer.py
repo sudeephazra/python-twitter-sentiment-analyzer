@@ -6,7 +6,7 @@ def test_main():
     # creating object of TwitterClient Class
     api = TwitterClient.TwitterClient()
     # calling function to get tweets
-    tweets = api.get_tweets(query = '@realDonaldTrump', count = 200)
+    tweets = api.get_tweets(query='@realDonaldTrump', count=200)
 
     if len(tweets) == 0:
         print('No tweets found')
@@ -41,4 +41,5 @@ def test_main():
                                                                                                  _totalCount))
 
 
-test_main()
+if __name__ == '__main__':
+    test_main()
